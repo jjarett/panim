@@ -1,0 +1,281 @@
+/* header css */
+
+@font-face {
+  font-family: "TitanOne";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/TitanOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Basic Commercial";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Basic-Commercial.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Quicksand-Regular.ttf) format("truetype");
+}
+
+/* Add a white background color to the top navigation */
+.topnav {
+  padding: 60px 0px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  font-family:  "TitanOne", sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #939393;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+  background-color: #fff;
+  color: black;
+}
+.topnav a:focus {
+  background-color: #fff;
+  color: black;
+}
+/*
+.topnav a:target {
+  background-color: #fff;
+  color: black;
+}
+*/
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+ }
+  /* Other CSS*/
+
+.nav-table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+.nav-table ul{
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family:  "TitanOne", sans-serif;
+}
+
+.nav-table li {
+  float: left;
+}
+
+.nav-table li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav-table li a:hover {
+  background-color: #fff;
+  text-decoration: underline;
+  /* text-decoration-thickness: 2px; */
+}
+
+/* footer css*/
+
+
+
+.footer {
+  background: whitesmoke;
+  color: #939393;
+  height: 400px;
+  width:100%;
+  position: relative;
+  font-family: "Quicksand";
+}
+.footer h4,h5{
+	color: black;
+}
+
+.footer .footer-content{
+	height: 350px;
+	display: flex;
+}
+
+.footer .footer-content .footer-section{
+	flex: 1;
+	padding: 25px;
+	/*border: 1px solid white; to see the section split */
+}
+
+.footer .footer-bottom {
+	
+    background: whitesmoke;
+	color: #939393;
+	height: 50px;
+	width: 100%;
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top:20px;
+}
+
+
+/* fab icons*/
+.fab {
+	color: #939393;
+}
+
+/* footer ul and li */
+
+.footer-about ul{
+	list-style-type: none;
+	color: #939393;
+	
+}
+
+.footer-about li{
+	list-style-type: none;
+	color: #939393;
+	padding-bottom:5px;
+}
+
+.footer-about li a{
+
+	list-style-type: none;
+	text-decoration:none;
+	color: #939393;
+	
+}
+
+.footer-payment li{
+  float:right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+ul#footer-payment li {
+  display:inline;
+}
+
+.footer h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.footer h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.footer h3{
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.footer h4{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer h5{
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+}
+
+.footer h6{
+  color: white;
+}
+
+/* page css*/
+html, body{
+	height:100%;
+	
+}
+
+.page-wrapper{
+	min-height:100%;
+}
+
+/* insert other css below */
+
+.quicksand-font {
+  font-family: "Quicksand";
+}
+
+.continue-shopping {
+  cursor: pointer; 
+  color: #4BB7D4;
+}
+
+.remove-button {
+  color: #4BB7D4;
+  cursor: pointer;
+}
+
+
+.checkout-button {
+  background-color: #4BB7D4;
+  padding: 20px 40px 20px 40px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #4BB7D4;
+  padding: 19px 40px 21px 40px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
